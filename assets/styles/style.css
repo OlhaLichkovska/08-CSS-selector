@@ -35,7 +35,7 @@ ul {
     padding: 0;
     list-style: none;
 }
-ul li {
+li {
     cursor: pointer;
     position: relative;
     padding: 12px 8px 12px 40px;
@@ -43,48 +43,18 @@ ul li {
     font-size: 18px;
     transition: 0.2s;
 }
-ul li:nth-child(odd) {
+li:nth-child(odd) {
     background: #848599;
 }
-ul li:hover {
+li:hover {
     background: #5e6072;
 }
-ul li.checked {
+label:checked {
     background: #ff8984;
     color: #fff;
     text-decoration: line-through;
 }
-input [type=checkbox] {
-    display: none;
-}
-input [type=checkbox] + label{
-    position: relative;
-    padding-left: 30px;
-}
-input [type=checkbox] + label::before {
-content: ;
-display: inline-block;
-width: 22px;
-height: 22px;
-border: 2px solid #3B3F45;
-background-color: #fff;
-position: absolute;
-left: 0;
-top: 0;
-}
-input [type=checkbox] :checked +label::after {
-    content: ;
-    display: inline-block;
-    width: 10px;
-    height: 5px;
-    border-left: 3px solid #fff;
-    border-bottom: 3px solid #fff;
-    transform: rotate(-45deg);
-    position: absolute;
-    left: 5px;
-    top: 5px;
 
-}
 label {
     width: 119px;
     height: 21px;
